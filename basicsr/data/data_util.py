@@ -4,9 +4,9 @@ import torch
 from os import path as osp
 from torch.nn import functional as F
 
-from basicsr.data.transforms import mod_crop
-from basicsr.utils import img2tensor, scandir
-from basicsr.utils.matlab_functions import rgb2ycbcr
+from BlindDiff.basicsr.data.transforms import mod_crop
+from BlindDiff.basicsr.utils import img2tensor, scandir
+from BlindDiff.basicsr.utils.matlab_functions import rgb2ycbcr
 
 def read_img_seq(path, require_mod_crop=False, scale=1, return_imgname=False):
     """Read a sequence of images from a given folder path.

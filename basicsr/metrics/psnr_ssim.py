@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-from basicsr.metrics.metric_util import reorder_image, to_y_channel
-from basicsr.utils.registry import METRIC_REGISTRY
+from BlindDiff.basicsr.metrics.metric_util import reorder_image, to_y_channel
+from BlindDiff.basicsr.utils.registry import METRIC_REGISTRY
 
 
 @METRIC_REGISTRY.register()

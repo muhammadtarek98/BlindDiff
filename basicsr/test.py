@@ -3,10 +3,10 @@ import torch
 from os import path as osp
 
 import time
-from basicsr.data import build_dataloader, build_dataset
-from basicsr.models import build_model
-from basicsr.utils import get_env_info, get_root_logger, get_time_str, make_exp_dirs
-from basicsr.utils.options import dict2str, parse_options
+from BlindDiff.basicsr.data import build_dataloader, build_dataset
+from BlindDiff.basicsr.models import build_model
+from BlindDiff.basicsr.utils import get_env_info, get_root_logger, get_time_str, make_exp_dirs
+from BlindDiff.basicsr.utils.options import dict2str, parse_options
 
 
 def test_pipeline(root_path):

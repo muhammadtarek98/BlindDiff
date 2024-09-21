@@ -3,11 +3,11 @@ from collections import OrderedDict
 from os import path as osp
 from tqdm import tqdm
 
-from basicsr.archs import build_network
-from basicsr.losses import build_loss
-from basicsr.metrics import calculate_metric
-from basicsr.utils import get_root_logger, imwrite, tensor2img
-from basicsr.utils.registry import MODEL_REGISTRY
+from BlindDiff.basicsr.archs import build_network
+from BlindDiff.basicsr.losses import build_loss
+from BlindDiff.basicsr.metrics import calculate_metric
+from BlindDiff.basicsr.utils import get_root_logger, imwrite, tensor2img
+from BlindDiff.basicsr.utils.registry import MODEL_REGISTRY
 from .base_model import BaseModel
 import time
 

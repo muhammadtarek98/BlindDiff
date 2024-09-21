@@ -4,13 +4,12 @@ import torch.nn as nn
 from scipy import linalg
 from tqdm import tqdm
 
-from basicsr.archs.inception import InceptionV3
-
+from torchvision.models.inception import inception_v3
 
 def load_patched_inception_v3(device='cuda', resize_input=True, normalize_input=False):
     # we may not resize the input, but in [rosinality/stylegan2-pytorch] it
     # does resize the input.
-    inception = InceptionV3([3], resize_input=resize_input, normalize_input=normalize_input)
+    inception = inception_v3([3], resize_input=resize_input, normalize_input=normalize_input)
     inception = nn.DataParallel(inception).eval().to(device)
     return inception
 

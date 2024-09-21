@@ -5,9 +5,9 @@ import os
 from scipy.ndimage.filters import convolve
 from scipy.special import gamma
 
-from basicsr.metrics.metric_util import reorder_image, to_y_channel
-from basicsr.utils.matlab_functions import imresize
-from basicsr.utils.registry import METRIC_REGISTRY
+from BlindDiff.basicsr.metrics.metric_util import reorder_image, to_y_channel
+from BlindDiff.basicsr.utils.matlab_functions import imresize
+from BlindDiff.basicsr.utils.registry import METRIC_REGISTRY
 
 
 def estimate_aggd_param(block):

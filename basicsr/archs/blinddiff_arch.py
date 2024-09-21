@@ -227,7 +227,7 @@ class Upsample(nn.Module):
 
 ##########################################################################
 ##---------- Restormer -----------------------
-from basicsr.utils.registry import ARCH_REGISTRY
+from BlindDiff.basicsr.utils.registry import ARCH_REGISTRY
 @ARCH_REGISTRY.register()
 class BlindDiff(nn.Module):
     def __init__(self, 
