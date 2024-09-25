@@ -6,7 +6,7 @@ import os
 import subprocess
 import time
 
-version_file = 'basicsr/version.py'
+version_file = 'BlindDiff/basicsr/version.py'
 
 
 def readme():

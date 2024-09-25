@@ -3,8 +3,8 @@
 #     ADM:   https://github.com/openai/guided-diffusion/blob/main/guided_diffusion
 #     IDDPM: https://github.com/openai/improved-diffusion/blob/main/improved_diffusion/gaussian_diffusion.py
 
-from basicsr.diffusion import gaussian_diffusion as gd
-from basicsr.diffusion.respace import SpacedDiffusion, space_timesteps
+from BlindDiff.basicsr.diffusion import gaussian_diffusion as gd
+from BlindDiff.basicsr.diffusion.respace import SpacedDiffusion, space_timesteps
 
 
 def create_diffusion(
